@@ -1,0 +1,153 @@
+.contact {
+  padding: 55px 0;
+
+  &__title {
+    font-size: 36px;
+    line-height: 167%;
+    color: $black;
+    @extend %titleFont;
+    position: relative;
+    padding-bottom: 30px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: #6d7278;
+      width: 200px;
+      height: 2px;
+    }
+  }
+
+  &__inner {
+    margin-left: auto;
+    max-width: 825px;
+  }
+
+  &__social {
+    margin-top: 40px;
+    display: flex;
+    gap: 0 46px;
+    align-items: center;
+  }
+
+  &__text {
+    font-weight: 400;
+    margin: 20px 0;
+    line-height: 175%;
+    color: #a1a1a1;
+  }
+
+  &__phone,
+  &__street,
+  &__city {
+    font-weight: 400;
+    line-height: 169%;
+    color: #5a5a5a;
+  }
+
+  &__city {
+    margin-bottom: 20px;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__form-input {
+    font-family: "Open Sans", sans-serif;
+    border: 1px solid #dfdfdf;
+    border-radius: 24px;
+    padding: 6px 16px;
+    line-height: 175%;
+    width: 49%;
+    margin-bottom: 15px;
+    font-size: 16px;
+
+    &::placeholder {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 175%;
+      color: #a1a1a1;
+    }
+  }
+
+  &__form-textarea {
+    font-family: "Open Sans", sans-serif;
+    width: 100%;
+    border: 1px solid #dfdfdf;
+    border-radius: 24px;
+    padding: 14px 16px;
+    line-height: 175%;
+    margin-bottom: 20px;
+    font-size: 16px;
+    min-height: 125px;
+    resize: none;
+
+    &::placeholder {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 175%;
+      color: #a1a1a1;
+    }
+  }
+
+  &__form-btn {
+    line-height: 175%;
+    text-align: center;
+    color: #fffff0;
+    padding: 6px 65px;
+    background-color: $black;
+    border-radius: 21px;
+  }
+}
+
+.contact {
+  &__slider {
+    margin: 100px 0;
+  }
+
+  &__slider-link {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  &__slider-img {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+  }
+
+  &__slider-info {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    line-height: 137%;
+    text-align: center;
+    padding: 0 5px;
+    color: rgba(54, 56, 56, 0.9);
+    @extend %titleFont;
+
+    background-color: rgba($color: #fff, $alpha: 0.6);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

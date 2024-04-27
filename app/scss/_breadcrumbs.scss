@@ -1,0 +1,23 @@
+.breadcrumbs {
+  background-color: rgba($color: #dfdfdf, $alpha: 0.5);
+  padding: 13px 14px;
+  margin-bottom: 60px;
+  &__list {
+    display: flex;
+  }
+
+  &__list-item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 200%;
+    color: #5a5a5a;
+    &::after {
+      content: "/";
+      margin-left: -4px;
+      margin-right: 4px;
+    }
+    &:last-child::after {
+      content: none;
+    }
+  }
+}

@@ -1,0 +1,84 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-family: "OpenSans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: $default;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-fluid {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10px;
+  button {
+    background-color: $black;
+    display: inline-block;
+    padding: 0;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    font-size: 0;
+    border: none;
+  }
+  li {
+    margin: 0 15px;
+  }
+  li.slick-active button {
+    background-color: yellow;
+  }
+}

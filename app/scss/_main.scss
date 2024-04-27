@@ -1,0 +1,264 @@
+// =============================== SLIDER =============================
+
+.top {
+  margin-bottom: 130px;
+
+  &__inner {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../images/slider-bg.avif");
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 722px;
+      z-index: -1;
+    }
+  }
+
+  &__slider-item {
+    display: flex !important;
+    align-items: center;
+  }
+
+  &__slider-img {
+    margin-left: 10%;
+  }
+
+  &__slider-info {
+    max-width: 645px;
+    margin-left: 25px;
+  }
+
+  &__slider-title {
+    font-size: 110px;
+    color: $black;
+    font-family: "Montserrat", sans-serif;
+    line-height: 135px;
+    padding-bottom: 26px;
+    margin-bottom: 26px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 185px;
+      height: 1px;
+      background-color: #6d7278;
+    }
+  }
+
+  &__slider-text {
+    font-weight: 400;
+    line-height: 169%;
+    color: #5a5a5a;
+    max-width: 600px;
+  }
+}
+
+// =============================== NEW-COLLECTIONS =============================
+
+.new-collections {
+  text-align: center;
+  &__title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    line-height: 142%;
+    color: $black;
+    margin-bottom: 50px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -25px;
+      left: calc(50% - 126px);
+      width: 252px;
+      height: 1px;
+      background-color: #6d7278;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    line-height: 169%;
+    color: #5a5a5a;
+    max-width: 740px;
+    margin: 0 auto;
+  }
+}
+
+//  ======================= DECOR ===============================
+
+.decor {
+  min-height: 600px;
+  background-image: url(../images/decor-bg.avif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 40px 0 80px;
+  &__title {
+    font-size: 60px;
+    line-height: 133%;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 43px;
+    position: relative;
+    color: $black;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -22px;
+      left: 0;
+      width: 200px;
+      height: 1px;
+      background-color: #6d7278;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    line-height: 175%;
+    color: #5a5a5a;
+  }
+
+  &__inner {
+    padding-top: 172px;
+    padding-bottom: 100px;
+    max-width: 540px;
+  }
+}
+
+// ========================= WORKS-PATH ==========================
+
+.works-path {
+  &__inner {
+    padding-bottom: 30px;
+  }
+
+  &__title {
+    color: $black;
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__items-top {
+    display: flex;
+    border-bottom: 2px rgba($color: #363838, $alpha: 0.7) solid;
+    position: relative;
+    align-items: start;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $black;
+    }
+  }
+
+  &__item {
+    max-width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+  }
+
+  &__item--prod {
+    margin-left: 317px;
+    margin-top: 3px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -62px;
+      left: 0;
+      width: 2px;
+      height: 20px;
+      background: rgba($color: #363838, $alpha: 0.7);
+    }
+  }
+
+  &__item--meas {
+    margin-top: 10px;
+    margin-left: 306px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -41px;
+      left: 0;
+      width: 2px;
+      height: 20px;
+      background: rgba($color: #363838, $alpha: 0.7);
+    }
+  }
+
+  &__item-title {
+    @extend %titleFont;
+    color: $black;
+    margin-left: 10px;
+    font-size: 16px;
+  }
+
+  &__item-text {
+    font-weight: 400;
+    line-height: 169%;
+    color: #5a5a5a;
+    margin-top: 13px;
+  }
+}
+
+// ================================= BLOG-BOX =================================================
+
+.blog-box {
+  &__title {
+    font-size: 36px;
+    line-height: 142%;
+    text-align: center;
+    max-width: 430px;
+    @extend %titleFont;
+    margin: 0 auto 30px;
+    color: $black;
+  }
+
+  &__inner {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 100px;
+  }
+
+  &__item-links {
+    font-size: 14px;
+    line-height: 200%;
+    color: #707070;
+    margin-top: 20px;
+  }
+
+  &__item-author,
+  &__item-theme {
+    transition: color 0.1s ease-out;
+  }
+
+  &__item-theme:hover,
+  &__item-author:hover {
+    color: $black;
+  }
+
+  &__item-title {
+    @extend %titleFont;
+    font-size: 24px;
+    line-height: 158%;
+    color: $black;
+    margin-top: 7px;
+  }
+}

@@ -1,0 +1,142 @@
+.footer {
+  background-color: #dfdfdf;
+
+  &__content {
+    padding: 60px 0 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info {
+    width: 540px;
+  }
+
+  &__info-title {
+    @extend %titleFont;
+    font-size: 16px;
+    margin-bottom: 14px;
+    color: $black;
+  }
+
+  &__info-text {
+    line-height: 169%;
+    font-weight: 400;
+    margin-bottom: 16px;
+    max-width: 476px;
+  }
+
+  &__info-mail {
+    display: inline-block;
+    margin-bottom: 22px;
+    font-size: 14px;
+    color: $black;
+    padding-left: 30px;
+    position: relative;
+
+    &::before {
+      content: "";
+      background-repeat: no-repeat;
+      width: 16px;
+      height: 16px;
+      background-image: url("../images/mail.svg");
+      position: absolute;
+      left: 0;
+      top: 5px;
+    }
+  }
+
+  &__form-input {
+    padding: 6px 10px 6px 18px;
+    border-radius: 21px;
+    background-color: transparent;
+    border: 1px solid $black;
+    width: 368px;
+    font-size: 16px;
+    line-height: 175%;
+
+    &::placeholder {
+      font-family: "OpenSans", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 175%;
+      color: #a1a1a1;
+    }
+  }
+
+  &__form-button {
+    color: #fffff0;
+    margin-left: 9px;
+    background-color: $black;
+    border-radius: 21px;
+    line-height: 175%;
+    padding: 10px 12px;
+    font-weight: 600;
+    min-width: 158px;
+  }
+
+  &__social {
+    width: 125px;
+    margin-left: 100px;
+    margin-right: auto;
+  }
+
+  &__social-item {
+    margin-bottom: 15px;
+    padding-left: 28px;
+  }
+
+  &__social-link {
+    font-size: 14px;
+    color: #707070;
+    line-height: 200%;
+    position: relative;
+    &::before {
+      content: "";
+      background-repeat: no-repeat;
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      left: -27px;
+      top: 3px;
+    }
+    &--yt::before {
+      background-image: url("../images/yt.svg");
+      width: 20px;
+    }
+    &--fb::before {
+      background-image: url("../images/fb.svg");
+    }
+    &--ig::before {
+      background-image: url("../images/ig.svg");
+    }
+    &--pt::before {
+      background-image: url("../images/pr.svg");
+    }
+    &--wa::before {
+      background-image: url("../images/wa.svg");
+    }
+  }
+
+  &__nav {
+    width: 125px;
+    margin-right: 60px;
+  }
+
+  &__nav-list-item {
+    margin-bottom: 15px;
+  }
+
+  &__nav-list-link {
+    font-size: 14px;
+    color: #707070;
+    line-height: 200%;
+  }
+
+  &__copy {
+    text-align: center;
+    color: #a1a1a1;
+    background-color: $black;
+    padding: 42px 10px;
+    font-weight: 400;
+  }
+}
